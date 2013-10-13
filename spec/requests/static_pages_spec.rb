@@ -8,15 +8,27 @@ describe "Static pages" do
       visit '/static_pages/home'
       expect(page).to have_content('Simplio')
     end
+
+    it "should have the right title" do
+  	  visit '/static_pages/home'
+  	  expect(page).to have_title("FZ")
+	end
+
   end
 
 
-    describe "Help page" do
+  describe "Help page" do
 
     it "should have the content 'Help'" do
       visit '/static_pages/help'
       expect(page).to have_content('Help')
     end
+
+    it "should have the right title" do
+  	  visit '/static_pages/home'
+  	  expect(page).to have_title("FZ")
+  	end
+
   end
 
 
@@ -26,7 +38,14 @@ describe "Static pages" do
       visit '/static_pages/about'
       expect(page).to have_content('About Us')
     end
+
+  it "should have the right title" do
+  	visit '/static_pages/home'
+  	expect(page).to have_title("FZ")
   end
 
-  
+
+  end
+
+
 end
