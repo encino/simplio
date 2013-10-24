@@ -11,7 +11,7 @@ describe "Static pages" do
 
     it "should have the right title" do
   	  visit '/static_pages/home'
-  	  expect(page).to have_title("FZ")
+  	  expect(page).to have_title("Nachos")
 	end
 
   end
@@ -26,7 +26,7 @@ describe "Static pages" do
 
     it "should have the right title" do
   	  visit '/static_pages/home'
-  	  expect(page).to have_title("FZ")
+  	  expect(page).to have_title("Nachos")
   	end
 
   end
@@ -41,7 +41,7 @@ describe "Static pages" do
 
   it "should have the right title" do
   	visit '/static_pages/home'
-  	expect(page).to have_title("FZ")
+  	expect(page).to have_title("Nachos")
   end
 
 
